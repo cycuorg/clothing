@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta property="head" content="H1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>衣著</title>
+
+<link rel="stylesheet" href="./../static/chimper/fonts/icomoon/style.css">
+<link rel="stylesheet" href="./../static/chimper/css/bootstrap.min.css">
+<link rel="stylesheet" href="./../static/chimper/css/magnific-popup.css">
+<link rel="stylesheet" href="./../static/chimper/css/jquery-ui.css">
+<link rel="stylesheet" href="./../static/chimper/css/owl.carousel.min.css">
+<link rel="stylesheet" href="./../static/chimper/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="./../static/chimper/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="./../static/chimper/fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="./../static/chimper/css/aos.css">
+<link rel="stylesheet" href="./../static/chimper/css/style.css">
+<link rel="shortcut icon" href="./../static/favicons.png">
+
+<style type="text/css">
+.site-section { background-color: #FFFF; padding: 40px 40px; }
+body > div > div.dropdown.open { display: block; }
+img.add_border { border: 3px solid blue; }
+
+.page-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 20px;
+    margin: 24px 0;
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-navigation .previous {
+    flex: 1 1 50%;
+    min-width: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.page-navigation .next {
+    flex: 1 1 50%;
+    min-width: 0;
+    margin-left: auto;
+    text-align: right;
+}
+
+.page-navigation a {
+    display: inline-block;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.page-navigation a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<script src="./../static/chimper/js/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="./../static/tipuesearch/css/normalize.min.css">
+<script src="./../static/tipuesearch/tipuesearch_set.js"></script>
+<script src="tipuesearch_content.js"></script>
+<link rel="stylesheet" href="./../static/tipuesearch/css/tipuesearch.css">
+<script src="./../static/tipuesearch/tipuesearch.js"></script>
+
+<script>
+function doSearch() {
+    if (window.jQuery && jQuery.fn.tipuesearch) {
+        jQuery('#tipue_search_input').tipuesearch({
+            newWindow: true,
+            minimumLength: 2,
+            wholeWords: false
+        });
+    }
+}
+
+if (window.jQuery) {
+    jQuery(document).ready(doSearch);
+}
+</script>
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushWbt.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css">
+<style>
+pre, pre code, .syntaxhighlighter .line, .syntaxhighlighter table td.code .line {
+  white-space: pre !important; word-wrap: normal !important; word-break: normal !important;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="site-wrap">
+
+<div class="site-mobile-menu">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close mt-3">
+      <span class="icon-close2 js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
+<header class="site-navbar py-4 bg-white" role="banner">
+  <div class="container">
+    <div class="row align-items-center">
+      <h1>Clothing</h1>
+
+      <div class="pl-4">
+        <form action="#" onsubmit="return false;">
+          <input type="text"
+                 placeholder="Search"
+                 name="q"
+                 id="tipue_search_input"
+                 pattern=".{2,}"
+                 title="At least 2 characters">
+        </form>
+      </div>
+
+      <div class="col-12 col-md-10 d-none d-xl-block">
+        <nav class="site-navigation position-relative text-right" role="navigation">
+          <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+<li class="active has-children">
+<a href="index.html">Home</a>
+<ul class="dropdown">
+<li><a href="sitemap.html">SMap</a></li>
+</ul>
+</li>
+<li><a href="About.html">About</a></li>
+<li><a href="衣著.html">衣著</a></li>
+<li><a href="縫紉機.html">縫紉機</a></li>
+</ul>
+
+        </nav>
+      </div>
+
+      <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
+           style="position: relative; top: 3px;">
+        <a href="#" class="site-menu-toggle js-menu-toggle text-black">
+          <span class="icon-menu h3"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="tipue_search_content">
+<h1>衣著</h1>
+<nav class="page-navigation" aria-label="Page navigation">
+<div class="previous">&lt;&lt; <a href="About.html">Previous: About</a></div>
+<div class="next"><a href="縫紉機.html">Next: 縫紉機</a> &gt;&gt;</div>
+</nav>
+
+
+<p>如果以「好看、耐穿、百搭、不容易退流行、價格合理」為標準，我會推薦男士走 日系簡約＋韓系休閒＋Smart Casual（輕商務） 的穿搭路線。</p>
+<p>這三種風格的共同優點是：</p>
+<ul>
+<li>不需要買很多衣服，也能搭配出不同造型。</li>
+<li>不會過度追求流行，穿 3～5 年依然好看。</li>
+<li>適合上班、約會、聚餐、日常出遊。</li>
+<li>可以透過平價品牌搭配少量質感單品，達到很高的 CP 值。</li>
+</ul>
+<h4>一、最推薦的 4 種男士穿搭風格</h4>
+<ol>
+<li>日系簡約風</li>
+</ol>
+<p>最推薦・CP 值高- 顏色：米白、卡其、灰、黑、深藍</p>
+<ul>
+<li>款式：寬鬆襯衫、素 T、直筒褲</li>
+<li>品牌：UNIQLO、GU、無印良品</li>
+<li>適合：日常、約會、旅行</li>
+</ul>
+<ol start="2">
+<li>韓系質感休閒風</li>
+</ol>
+<ul>
+<li>顏色：灰、奶茶、黑、白</li>
+<li>款式：針織 Polo、落肩上衣、寬版西裝褲</li>
+<li>品牌：MUSINSA、8SECONDS、SPAO</li>
+<li>適合：約會、聚餐、年輕時尚感</li>
+</ul>
+<ol start="3">
+<li>Smart Casual 輕商務風</li>
+</ol>
+<ul>
+<li>顏色：海軍藍、白、灰、卡其</li>
+<li>款式：休閒西裝外套、襯衫、九分西裝褲</li>
+<li>品牌：UNIQLO、NET、Massimo Dutti</li>
+<li>適合：上班、正式聚會、成熟穩重形象</li>
+</ul>
+<ol start="4">
+<li>美式休閒風</li>
+</ol>
+<ul>
+<li>顏色：軍綠、黑、灰、丹寧藍</li>
+<li>款式：大學 T、牛仔褲、工裝褲</li>
+<li>品牌：NET、GU、Levi's、Dickies</li>
+<li>適合：週末、休閒、戶外活動</li>
+</ul>
+<h4>二、CP 值最高的品牌推薦排行榜</h4>
+<p>我會把預算優先放在版型、材質和耐穿度，而不是品牌 Logo。</p>
+<table>
+<thead>
+<tr>
+<th>品牌</th>
+<th>價格定位</th>
+<th>最值得買</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UNIQLO</td>
+<td>中低</td>
+<td>素 T、襯衫、長褲</td>
+</tr>
+<tr>
+<td>GU</td>
+<td>低</td>
+<td>寬褲、休閒上衣</td>
+</tr>
+<tr>
+<td>NET</td>
+<td>低</td>
+<td>基本款、襯衫、褲子</td>
+</tr>
+<tr>
+<td>MUJI 無印良品</td>
+<td>中</td>
+<td>亞麻襯衫、休閒褲</td>
+</tr>
+<tr>
+<td>Plain-me</td>
+<td>中</td>
+<td>設計感上衣、寬褲</td>
+</tr>
+<tr>
+<td>Global Work</td>
+<td>中</td>
+<td>通勤襯衫、褲子</td>
+</tr>
+<tr>
+<td>ZARA</td>
+<td>中</td>
+<td>外套、設計款</td>
+</tr>
+</tbody>
+</table>
+<p>品牌選擇參考：</p>
+<p>購買策略：</p>
+<ul>
+<li>基本款：UNIQLO、NET。</li>
+<li>流行款：GU。</li>
+<li>質感升級：MUJI、Plain-me。</li>
+<li>特別場合：ZARA。</li>
+</ul>
+<h4>三、最推薦的高 CP 值整套搭配</h4>
+<p>以下以台灣男生日常穿著為主，提供預算估算，不是即時商品報價。</p>
+<p><a href="https://figure-online.net/products/254205001001-gu252-70025b?utm_source=chatgpt.com">figure-online.net</a></p>
+<p>搭配 A：日系簡約｜最值得投資</p>
+<ul>
+<li>白色厚磅素 T：NT$400～700</li>
+<li>卡其直筒長褲：NT$800～1,200</li>
+<li>白色休閒鞋：NT$1,500～2,500</li>
+<li>簡約手錶：NT$800～1,500</li>
+</ul>
+<p>整套估計 NT$3,500～5,900</p>
+<p><a href="https://www.studiosuits.com/blogs/articles/wide-leg-pants-men-the-complete-style-fit-guide?utm_source=chatgpt.com">studiosuits.com</a></p>
+<p>搭配 B：韓系成熟｜約會最推薦</p>
+<ul>
+<li>黑色針織 Polo：NT$600～1,000</li>
+<li>灰色西裝寬褲：NT$900～1,500</li>
+<li>黑色樂福鞋：NT$1,500～2,500</li>
+<li>簡約皮帶：NT$300～600</li>
+</ul>
+<p>整套估計 NT$3,300～5,600</p>
+<p><a href="https://www.paisawapas.com/blog/best-trouser-shirt-combination/?utm_source=chatgpt.com">paisawapas.com</a></p>
+<p>搭配 C：商務休閒｜上班最推薦</p>
+<ul>
+<li>淺藍牛津襯衫：NT$700～1,200</li>
+<li>深藍西裝休閒褲：NT$900～1,500</li>
+<li>白色休閒鞋：NT$1,500～2,500</li>
+<li>棕色皮帶：NT$300～600</li>
+</ul>
+<p>整套估計 NT$3,400～5,800</p>
+<h4>四、如果要打造一套 CP 值最高的衣櫃</h4>
+<p>我建議先買以下 10 件，基本上就能組合出很多不同穿搭：</p>
+<table>
+<thead>
+<tr>
+<th>單品</th>
+<th>建議顏色</th>
+<th>數量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>素面 T 恤</td>
+<td>白、黑</td>
+<td>2</td>
+</tr>
+<tr>
+<td>休閒襯衫</td>
+<td>白、淺藍</td>
+<td>2</td>
+</tr>
+<tr>
+<td>針織 Polo</td>
+<td>黑、灰</td>
+<td>1</td>
+</tr>
+<tr>
+<td>長褲</td>
+<td>黑、卡其、深藍</td>
+<td>3</td>
+</tr>
+<tr>
+<td>牛仔褲</td>
+<td>深藍</td>
+<td>1</td>
+</tr>
+<tr>
+<td>外套</td>
+<td>深藍或灰</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>台灣天氣較熱，建議優先選透氣棉、亞麻混紡、吸濕排汗材質，不需要一開始就買太多厚重外套。</p>
+<nav class="page-navigation" aria-label="Page navigation">
+<div class="previous">&lt;&lt; <a href="About.html">Previous: About</a></div>
+<div class="next"><a href="縫紉機.html">Next: 縫紉機</a> &gt;&gt;</div>
+</nav>
+<script>
+(function(){
+  function restorePreNewlines(){
+    var nodes=document.querySelectorAll('pre');
+    for(var i=0;i<nodes.length;i++){
+      var pre=nodes[i], html=pre.innerHTML;
+      if(!html) continue;
+      var fixed=html.replace(/<br\s*\/?\s*(?:\s[^>]*)?>/gi,'\n').replace(/\r\n/g,'\n').replace(/\r/g,'\n');
+      if(fixed!==html) pre.innerHTML=fixed;
+    }
+  }
+  function run(){
+    restorePreNewlines();
+    if(!window.SyntaxHighlighter) return;
+    try{
+      if(SyntaxHighlighter.config){ SyntaxHighlighter.config.bloggerMode=true; SyntaxHighlighter.config.stripBrs=false; }
+      if(typeof SyntaxHighlighter.all==='function') SyntaxHighlighter.all();
+    }catch(e){}
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true});
+  else run();
+})();
+</script>
+</div><!-- /tipue_search_content -->
+
+<div class="container">
+  <div class="row pt-3 mx-auto">
+    <p>
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+      All rights reserved |
+      <i class="icon-heart" aria-hidden="true"></i>
+      by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    </p>
+  </div>
+</div>
+
+</div><!-- /site-wrap -->
+
+<script src="./../static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="./../static/chimper/js/jquery-ui.js"></script>
+<script src="./../static/chimper/js/popper.min.js"></script>
+<script src="./../static/chimper/js/bootstrap.min.js"></script>
+<script src="./../static/chimper/js/owl.carousel.min.js"></script>
+<script src="./../static/chimper/js/jquery.stellar.min.js"></script>
+<script src="./../static/chimper/js/jquery.countdown.min.js"></script>
+<script src="./../static/chimper/js/jquery.magnific-popup.min.js"></script>
+<script src="./../static/chimper/js/bootstrap-datepicker.min.js"></script>
+<script src="./../static/chimper/js/aos.js"></script>
+<script src="./../static/chimper/js/main.js"></script>
+</body>
+</html>
